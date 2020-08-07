@@ -29,9 +29,9 @@ function renderTodoApp() {
   app.appendChild(h1);
   h1.appendChild(unorderedList);
   // and maybe some here
-  for (i = 0; i < todos.length; i++) {
-    let itemDescription = todos[i].description;
-    let itemCompleted = todos[i].completed ? "checked" : "";
+  for (index = 0; index < todos.length; index++) {
+    let itemDescription = todos[index].description;
+    let itemCompleted = todos[index].completed ? "checked" : "";
     let markUp = `
         <li><input type="checkbox" ${itemCompleted}/>${itemDescription}
         </li>
